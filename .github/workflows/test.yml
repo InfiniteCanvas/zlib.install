@@ -19,7 +19,7 @@ jobs:
 
     - name: Install
       working-directory: ${{github.workspace}}/build
-      run: powershell -Command "(Invoke-WebRequest -Uri https://git.io/JnHTY -OutFile install_zlib.bat)"; ./install_zlib.bat; del install_zlib.bat
+      run: powershell -Command "(Invoke-WebRequest -Uri https://raw.githubusercontent.com/InfiniteCanvas/zlib.install/master/install.bat -OutFile install_zlib.bat)"; ./install_zlib.bat; del install_zlib.bat
       shell: cmd
 
     - name: Test
