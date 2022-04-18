@@ -2,7 +2,7 @@
 setlocal EnableDelayedExpansion
 
 set ORIGIN=%cd%
-
+echo
 :: Configuration
 set VERSION=1.2.12
 set VER=%VERSION:.=%
